@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UniTrack, tu espacio para organizar la vida universitaria.">
+    <title>UniTrack | Tu vida universitaria en un solo lugar</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/" aria-label="Ir al inicio de UniTrack">
+            <span class="brand-mark" aria-hidden="true">U</span>
+            <span>UniTrack</span>
+        </a>
+    </header>
+
+    <main class="dashboard">
+        <section class="welcome" aria-labelledby="welcome-title">
+            <p class="eyebrow">Tu espacio académico</p>
+            <h1 id="welcome-title">¡Bienvenida a UniTrack!</h1>
+            <p class="welcome-copy">
+                Organizá tus materias, evaluaciones y trabajos en un solo lugar,
+                con una vista clara de todo lo que viene.
+            </p>
+        </section>
+
+        <section class="summary" aria-label="Resumen académico">
+            <article class="summary-card summary-card--violet">
+                <div>
+                    <p class="card-label">Materias</p>
+                    <p class="card-value">0</p>
+                </div>
+                <span class="card-icon" aria-hidden="true">M</span>
+            </article>
+
+            <article class="summary-card summary-card--blue">
+                <div>
+                    <p class="card-label">Próximas evaluaciones</p>
+                    <p class="card-value">0</p>
+                </div>
+                <span class="card-icon" aria-hidden="true">E</span>
+            </article>
+
+            <article class="summary-card summary-card--pink">
+                <div>
+                    <p class="card-label">Trabajos pendientes</p>
+                    <p class="card-value">0</p>
+                </div>
+                <span class="card-icon" aria-hidden="true">T</span>
+            </article>
+        </section>
+
+        <section class="empty-state" aria-labelledby="empty-title">
+            <div class="empty-illustration" aria-hidden="true">
+                <span class="book book--back"></span>
+                <span class="book book--front"></span>
+                <span class="sparkle">✦</span>
+            </div>
+            <h2 id="empty-title">Todavía no hay materias cargadas</h2>
+            <p>Cuando agregues tus materias, vas a poder verlas y organizarlas desde acá.</p>
+        </section>
+    </main>
+</body>
+</html>
